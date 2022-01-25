@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{list-style: none;}
+
+a{text-decoration: none; color: inherit;}
+img{vertical-align: top;}
+button,input{border: 0; background-color: transparent;}
+
+img.pc{display: none;}
+img.m{display: block;}
+
+header{
+    position: relative;
+    height: 50px;
+    display: flex;
+    background-color: #132822;  
+}
+header h1{
+    position: absolute;
+    padding-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+header h1 img.m{
+    width: 150px;
+    height: auto;
+}
+
+header .btn-menu{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+header .btn-sns{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+header .btn-menu img{
+    width: 20px;
+    height: auto;
+}
+header .btn-sns img{
+    width: 20px;
+    height: auto;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #132822;
+}
+
+.menu .close{
+    margin: 20px;
+}
+.menu .close img{
+    width: 20px;
+    height: auto;
+}
+
+header .util{}
+header .util .sns{
+    display: flex;
+    justify-content: center;
+}
+header .util .sns li{
+    color: #8e9996;
+    font-size: 15px;
+    padding-bottom: 20px;
+    margin-right: 7px;
+}
+header .util .sns li form{
+    display: none;
+}
+header .util .sns li::after{
+    margin-left: 7px;
+    content: '|';
+}
+header .util .sns li:last-child::after{
+    content: none;
+}
+
+header nav .sub-gnb{}
+header nav .sub-gnb li{
+    color: #8e9996;
+    text-align: center;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+header nav li .s-gnb{
+    display: block;
+    background-color: #1b302a;
+}
+header nav li .s-gnb li{
+    border-top: 1px solid #0c221c;
+    padding: 10px 0;
+}
+
+header nav .sub-gnb > li:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.banner{position: relative;}
+.banner .m{
+    width: 100%;
+}
+.banner .text{
+    position: absolute;
+    top: 53%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.text .view{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 25px;
+    border: 1px solid #fff;
+}
+.text .view b{
+    display: block;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 4px 0;
+}
+.view:hover b{
+    background-color: #fff;
+    color: #000;
+    transition: all 1.2s;
+}
+
+.con{}
+.con .box{
+    position: relative;
+    margin: 0 15px;
+    top: 15px;
+}
+.con .box img{
+    width: 100%;
+    height: auto;
+}
+.con .box p{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-55%);
+}
+.con .btn{
+}
+.con .btn a{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-55%);
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 5px 0;
+    width: 130px;
+    height: 25px;
+}
+
+.con2{
+    margin-top: 30px;
+}
+.con2 img{
+    width: 50%;
+    height: auto;
+}
+.con2 .box{
+    background-color: #222;
+}
+.con2 .box p{
+    color: #fff;
+    text-align: center;
+}
+.con2 .box .btn{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 130px;
+    height: 25px;
+    padding: 5px 0;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.con2 .box .btn a{}
+/*모바일*/
+
+@media all and (min-width: 1200px){
+    header h1 img{
+        width: 256;
+    }
+}
